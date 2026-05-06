@@ -428,3 +428,6 @@ bot.launch().then(() => {
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
+require('http').createServer((req, res) => {
+  res.end('Bot is running');
+}).listen(process.env.PORT || 3000);
