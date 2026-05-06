@@ -5,8 +5,8 @@ const path = require('path');
 // ============================================================
 //  CONFIGURATION - EDIT THESE VALUES
 // ============================================================
-const BOT_TOKEN = '8743651270:AAEoW1jDwp-Phow3LRX4TD31zzisCHR9UFQ';         // From @BotFather
-const ADMIN_CHAT_ID = '7789057655'; // Your Telegram user ID
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const ADMIN_CHAT_ID = process.env.ADMIN_CHAT_ID;
 
 // Group/Channel links sent after approval
 const GROUP_1_LINK = 'https://t.me/+FTwHllosLjtkNjVl'; // 390 plan group
